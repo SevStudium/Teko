@@ -31,3 +31,10 @@ if headlines:
         print("-", t)
 else:
     print("Keine Headline gefunden!")
+
+
+
+with open("headlines.txt", "w", encoding="utf-8") as f:
+    for t in headlines:
+        f.write(t + "\n")
+
