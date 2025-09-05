@@ -29,7 +29,7 @@ if headlines:
         print("-", t)
 
     # txt datei
-    with open("headlines.txt", "w", encoding="utf-8") as f:
+    with open("resources/headlines.txt", "w", encoding="utf-8") as f:
         f.write("Projekt Webautomatisierung von Severin\n")
         f.write("Headlines von SRF.ch\n")
         f.write("\n")
@@ -42,7 +42,7 @@ if headlines:
         "untertitel": "Headlines von SRF.ch",
         "headlines": [f"- {t}" for t in headlines],
     }
-    with open("headlines.json", "w", encoding="utf-8") as f:
+    with open("resources/headlines.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 else:

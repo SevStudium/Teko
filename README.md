@@ -2,9 +2,7 @@
 
 Webscrapping01
 
+Praxisarbeit Webautomatisierung
 
-# Praxisarbeit Webautomatisierung
-
-# Falls noch nicht vorhanden:
-
-# pip install requests beautifulsoup4
+Falls noch nicht vorhanden:
+pip install requests beautifulsoup4
