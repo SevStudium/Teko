@@ -18,16 +18,16 @@ antwort = requests.get(url, headers=HEADERS, timeout=15)
 
 soup = BeautifulSoup(antwort.text, "html.parser")
 
-headline_text = None
+headlines = []
 for a in soup.select('a[href*="/news/"]'):
     text = a.get_text(strip=True)
-    if text and len(text) > 20:
-        headline_text = text
+    if text and len(text) >= 12:
+        headlines.append(text)
+    if len(headlines) == 5:
         break
 
-if headline_text:
-    print("Erste SRF-Headline (Chrome User-Agent):")
-    print(headline_text)
+if headlines:
+    for t in headlines:
+        print("-", t)
 else:
-    print("Keine Headline gefunden")
-
+    print("Keine Headline gefunden!")
