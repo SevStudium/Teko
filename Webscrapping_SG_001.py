@@ -10,6 +10,7 @@ print("Hello")
 
 import requests
 from bs4 import BeautifulSoup
+import json
 
 url = "https://www.srf.ch/news"
 HEADERS = {"User-Agent": "Chrome/120.0.0.0"} 
@@ -32,9 +33,14 @@ if headlines:
 else:
     print("Keine Headline gefunden!")
 
-
+#Headlines in txt datei speichern
 
 with open("headlines.txt", "w", encoding="utf-8") as f:
     for t in headlines:
         f.write(t + "\n")
+
+#JSON Datei erstellen
+with open("headlines.json", "w", encoding="utf-8") as f:
+    json.dump(headlines, f, ensure_ascii=False, indent=2)
+
 
