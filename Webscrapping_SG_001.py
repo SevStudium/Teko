@@ -15,7 +15,12 @@ import json
 url = "https://www.srf.ch/news"
 HEADERS = {"User-Agent": "Chrome/120.0.0.0"} 
 
-antwort = requests.get(url, headers=HEADERS, timeout=15)
+try:
+    antwort = requests.get(url, headers=HEADERS, timeout=15)
+    antwort.raise_for_status()
+except requests.exceptions.RequestException as e:
+    print("Fehler beim Abruf:", e)
+    exit()
 
 soup = BeautifulSoup(antwort.text, "html.parser")
 
@@ -42,5 +47,9 @@ with open("headlines.txt", "w", encoding="utf-8") as f:
 #JSON Datei erstellen
 with open("headlines.json", "w", encoding="utf-8") as f:
     json.dump(headlines, f, ensure_ascii=False, indent=2)
+
+
+
+
 
 
