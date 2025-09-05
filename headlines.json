@@ -1,7 +1,11 @@
-[
-  "Abschaffung Eigenmietwert",
-  "Kantone und Gemeinden",
-  "USA unter Trump",
-  "International",
-  "Gesellschaft"
-]
+{
+  "titel": "Projekt Webautomatisierung von Severin",
+  "untertitel": "Headlines von SRF.ch",
+  "headlines": [
+    "- Abschaffung Eigenmietwert",
+    "- Kantone und Gemeinden",
+    "- USA unter Trump",
+    "- International",
+    "- Gesellschaft"
+  ]
+}
