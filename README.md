@@ -1,7 +1,5 @@
-# Teko
 
-<<<<<<< HEAD
-# Webscraping Projekt
+# Webscraping Projekt von Séverin Gschwind
 
 ## Struktur
 
