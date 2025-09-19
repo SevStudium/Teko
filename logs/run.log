@@ -1,0 +1,48 @@
+2025-09-19 20:34:22,789 [INFO] === Script gestartet um: 2025-09-19 20:34:22 ===
+2025-09-19 20:34:23,012 [INFO] Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-19 20:34:23,097 [INFO] Anzahl Headlines gefunden: 5
+2025-09-19 20:34:23,099 [INFO] TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-19 20:34:23,100 [INFO] JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-19 20:34:23,100 [INFO] CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-19 20:34:23,100 [INFO] XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-19 20:34:23,100 [INFO] === Script erfolgreich beendet ===
+2025-09-19 20:36:07,784 [INFO] === Script gestartet um: 2025-09-19 20:36:07 ===
+2025-09-19 20:36:07,947 [INFO] Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-19 20:36:08,033 [INFO] Anzahl Headlines gefunden: 5
+2025-09-19 20:36:08,035 [INFO] TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-19 20:36:08,035 [INFO] JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-19 20:36:08,036 [INFO] CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-19 20:36:08,036 [INFO] XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-19 20:36:08,036 [INFO] === Script erfolgreich beendet ===
+2025-09-19 20:36:32,262 [INFO] === Script gestartet um: 2025-09-19 20:36:32 ===
+2025-09-19 20:36:32,430 [INFO] Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-19 20:36:32,521 [INFO] Anzahl Headlines gefunden: 5
+2025-09-19 20:36:32,524 [INFO] TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-19 20:36:32,524 [INFO] JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-19 20:36:32,525 [INFO] CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-19 20:36:32,526 [INFO] XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-19 20:36:32,526 [INFO] === Script erfolgreich beendet ===
+2025-09-19 20:36:47,914 [INFO] === Script gestartet um: 2025-09-19 20:36:47 ===
+2025-09-19 20:36:48,122 [INFO] Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-19 20:36:48,210 [INFO] Anzahl Headlines gefunden: 5
+2025-09-19 20:36:48,211 [INFO] TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-19 20:36:48,211 [INFO] JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-19 20:36:48,212 [INFO] CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-19 20:36:48,212 [INFO] XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-19 20:36:48,212 [INFO] === Script erfolgreich beendet ===
+2025-09-19 20:37:33,961 [INFO] === Script gestartet um: 2025-09-19 20:37:33 ===
+2025-09-19 20:37:34,108 [INFO] Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-19 20:37:34,198 [INFO] Anzahl Headlines gefunden: 5
+2025-09-19 20:37:34,199 [INFO] TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-19 20:37:34,199 [INFO] JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-19 20:37:34,200 [INFO] CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-19 20:37:34,200 [INFO] XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-19 20:37:34,200 [INFO] === Script erfolgreich beendet ===
+2025-09-19 20:38:16,717 [INFO] === Script gestartet um: 2025-09-19 20:38:16 ===
+2025-09-19 20:38:16,926 [INFO] Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-19 20:38:17,037 [INFO] Anzahl Headlines gefunden: 5
+2025-09-19 20:38:17,038 [INFO] TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-19 20:38:17,039 [INFO] JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-19 20:38:17,040 [INFO] CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-19 20:38:17,040 [INFO] XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-19 20:38:17,040 [INFO] === Script erfolgreich beendet ===
