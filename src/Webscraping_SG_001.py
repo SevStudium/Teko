@@ -50,7 +50,7 @@ if not headlines:
 
 print("Projekt Webautomatisierung von Séverin")
 print(f"Stand: {run_time}\n")
-print("Headlines von.ch")
+print("Headlines von srf.ch")
  
 for t in headlines:
     print("-", t)
