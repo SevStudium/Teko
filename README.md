@@ -1,5 +1,6 @@
 # Teko
 
+<<<<<<< HEAD
 # Webscraping Projekt
 
 ## Struktur
@@ -13,11 +14,15 @@
 - Headlines von SRF.ch scrapen
 - Speicherung in TXT, JSON, CSV, XML
 - Zeitstempel pro Lauf
+=======
+Webscrapping01
+>>>>>>> origin/main
 
 Praxisarbeit Webautomatisierung
 
 Falls noch nicht vorhanden:
 pip install requests beautifulsoup4
+<<<<<<< HEAD
 
 
 
@@ -34,3 +39,5 @@ pip install requests beautifulsoup4
 - Headlines von SRF.ch scrapen
 - Speicherung in TXT, JSON, CSV, XML
 - Zeitstempel pro Lauf
+=======
+>>>>>>> origin/main
