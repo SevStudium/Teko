@@ -1,3 +1,14 @@
+"""
+Projektarbeit Webscraping
+SRF-Headlines Scraper
+Abruf -> Filter -> Ausgabe/Export (TXT/JSON/CSV/XML), Logs in logs/run.log.
+Start: cd src && python Webscraping_SG_001.py
+Ordner: data/ (Outputs), logs/ (run.log), src/ (Code)
+Autor: Séverin Gschwind
+Datum: 22.09.2025
+"""
+
+
 
 
 import json, csv, logging, sys
@@ -8,6 +19,8 @@ from bs4 import BeautifulSoup
 
 from pathlib import Path
 from datetime import datetime
+
+import re, random
 
 # Ordnerstruktur 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -46,16 +59,46 @@ except requests.exceptions.RequestException as e:
 
 soup = BeautifulSoup(antwort.text, "html.parser")
 
-# Headlines sammeln
-headlines = []
-for a in soup.select('a[href*="/news/"]'):
-    text = a.get_text(strip=True)
-    if text and len(text) >= 12:
-        headlines.append(text)
-    if len(headlines) == 5:
-        break
+# Headlines sammeln NEU spezifischer
 
-logging.info("Anzahl Headlines gefunden: %d", len(headlines))
+STOPWORTE = {
+    "International", "Gesellschaft", "Schweiz", "Sport", "Kultur",
+    "Wissen", "Panorama", "Wirtschaft", "Videos", "Podcasts",
+    "News", "SRF News", "Mein Account"
+}
+
+def ist_echte_headline(t: str) -> bool:
+    t = t.strip()
+    if not t or t in STOPWORTE:
+        return False
+    
+    if len(t) < 20 or len(re.findall(r"\w+", t)) < 4:
+        return False
+    
+    if any(c.isalpha() for c in t) and t.upper() == t:
+        return False
+    return True
+
+def erster_satz(text: str) -> str:
+    if "." in text:
+        return text.split(".")[0].strip() + "."
+    return text.strip()
+
+kandidaten = soup.select(
+    'h2 a[href*="/news/"], h3 a[href*="/news/"], '
+    'a[href*="/news/"][aria-label], a[href*="/news/"][data-analytics], '
+    'a[href*="/news/"]'
+)
+gesehen = set()
+headlines = []
+for a in kandidaten:
+    text = a.get_text(strip=True)
+    if ist_echte_headline(text) and text not in gesehen:
+        gesehen.add(text)
+        headlines.append(erster_satz(text))
+headlines = headlines[:10]
+
+logging.info("Anzahl Headlines gefunden (nach Filter/Dedupe): %d", len(headlines))
 
 if not headlines:
     logging.warning("Keine Headline gefunden – Script beendet.")
