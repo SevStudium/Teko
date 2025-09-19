@@ -46,7 +46,6 @@ logging.basicConfig(
 run_time = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
 logging.info(f"=== Script gestartet um: {run_time} ===")
 
-
 # Abruf
 url = "https://www.srf.ch/news"
 HEADERS = {"User-Agent": "Chrome/120.0.0.0"}
@@ -68,6 +67,7 @@ STOPWORTE = {
     "Wissen", "Panorama", "Wirtschaft", "Videos", "Podcasts",
     "News", "SRF News", "Mein Account"
 }
+
 
 def ist_echte_headline(t: str) -> bool:
     t = t.strip()
@@ -99,6 +99,7 @@ for a in kandidaten:
         gesehen.add(text)
         headlines.append(erster_satz(text))
 headlines = headlines[:10]
+
 
 logging.info("Anzahl Headlines gefunden (nach Filter/Dedupe): %d", len(headlines))
 
@@ -135,6 +136,8 @@ logging.info("PNG gespeichert: %s", DATA_DIR / "WordCount.png")
 print("Projekt Webautomatisierung von Séverin")
 print(f"Stand: {run_time}\n")
 print("Headlines von SRF.ch:")
+
+
 
 for t in headlines:
     print("-", t)
@@ -177,5 +180,5 @@ ET.indent(tree, space="  ", level=0)
 tree.write(DATA_DIR / "headlines.xml", encoding="utf-8", xml_declaration=True)
 logging.info("XML gespeichert: %s", DATA_DIR / 'headlines.xml')
 
-
 logging.info("=== Script erfolgreich beendet ===")
+
