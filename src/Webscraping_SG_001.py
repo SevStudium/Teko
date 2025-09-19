@@ -21,6 +21,8 @@ from pathlib import Path
 from datetime import datetime
 
 import re, random
+import matplotlib.pyplot as plt
+
 
 # Ordnerstruktur 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -40,7 +42,8 @@ logging.basicConfig(
 
 
 # Zeitstempel
-run_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+run_time = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
 logging.info(f"=== Script gestartet um: {run_time} ===")
 
 
@@ -60,7 +63,6 @@ except requests.exceptions.RequestException as e:
 soup = BeautifulSoup(antwort.text, "html.parser")
 
 # Headlines sammeln NEU spezifischer
-
 STOPWORTE = {
     "International", "Gesellschaft", "Schweiz", "Sport", "Kultur",
     "Wissen", "Panorama", "Wirtschaft", "Videos", "Podcasts",
@@ -104,6 +106,30 @@ if not headlines:
     logging.warning("Keine Headline gefunden – Script beendet.")
     print("Keine Headline gefunden")
     exit()
+
+# Regel für Schweiz (aus keinem spezifischen Grund)
+pattern = re.compile(r"schweiz\w*", re.IGNORECASE)
+
+# Anzahl pro Headline
+schweiz_hits = [len(pattern.findall(h)) for h in headlines]
+schweiz_count = sum(schweiz_hits)
+logging.info("WordCount 'Schweiz': je Headline=%s | Gesamt=%d", schweiz_hits, schweiz_count)
+print(f"WordCount 'Schweiz': {schweiz_count}")
+
+# Plot
+plt.figure(figsize=(8, 5))
+plt.plot(range(1, len(headlines) + 1), schweiz_hits, marker="o", linestyle="-")
+plt.xticks(range(1, len(headlines) + 1), [str(i) for i in range(1, len(headlines) + 1)])
+plt.yticks(range(0, max(schweiz_hits) + 2))  
+plt.title("WordCount 'Schweiz' in SRF-Headlines")
+plt.xlabel("Headlines")
+plt.ylabel("Anzahl Vorkommen")
+plt.grid(True)
+
+# PNG datei
+plt.savefig(DATA_DIR / "WordCount.png")
+plt.close()
+logging.info("PNG gespeichert: %s", DATA_DIR / "WordCount.png")
 
 # Ausgabe Console
 print("Projekt Webautomatisierung von Séverin")
