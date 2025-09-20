@@ -176,3 +176,33 @@
 2025-09-20 01:15:35,323 - INFO - CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
 2025-09-20 01:15:35,324 - INFO - XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
 2025-09-20 01:15:35,324 - INFO - === Script erfolgreich beendet ===
+2025-09-20 11:06:15,066 - INFO - === Script gestartet um: 20.09.2025 11:06:15 ===
+2025-09-20 11:06:15,269 - INFO - Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-20 11:06:15,368 - INFO - Anzahl Headlines gefunden (nach Filter/Dedupe): 10
+2025-09-20 11:06:15,379 - INFO - WordCount 'Schweiz': je Headline=[0, 0, 1, 0, 0, 0, 0, 0, 1, 0] | Gesamt=2
+2025-09-20 11:06:15,696 - INFO - PNG gespeichert: D:\Teko\Webscraping_Séverin\data\WordCount.png
+2025-09-20 11:06:15,698 - INFO - TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-20 11:06:15,699 - INFO - JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-20 11:06:15,699 - INFO - CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-20 11:06:15,700 - INFO - XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-20 11:06:15,700 - INFO - === Script erfolgreich beendet ===
+2025-09-20 11:39:08,962 - INFO - === Script gestartet um: 20.09.2025 11:39:08 ===
+2025-09-20 11:39:09,423 - INFO - Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-20 11:39:09,523 - INFO - Anzahl Headlines gefunden (nach Filter/Dedupe): 10
+2025-09-20 11:39:09,523 - INFO - WordCount 'Schweiz': je Headline=[0, 0, 1, 0, 0, 0, 0, 0, 1, 0] | Gesamt=2
+2025-09-20 11:39:09,815 - INFO - PNG gespeichert: D:\Teko\Webscraping_Séverin\data\WordCount.png
+2025-09-20 11:39:09,818 - INFO - TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-20 11:39:09,818 - INFO - JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-20 11:39:09,818 - INFO - CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-20 11:39:09,819 - INFO - XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-20 11:39:09,819 - INFO - === Script erfolgreich beendet ===
+2025-09-20 11:44:14,099 - INFO - === Script gestartet um: 20.09.2025 11:44:14 ===
+2025-09-20 11:44:14,300 - INFO - Abruf erfolgreich von URL: https://www.srf.ch/news
+2025-09-20 11:44:14,403 - INFO - Anzahl Headlines gefunden (nach Filter/Dedupe): 10
+2025-09-20 11:44:14,404 - INFO - WordCount 'Schweiz': je Headline=[0, 0, 1, 0, 0, 0, 0, 1, 0, 0] | Gesamt=2
+2025-09-20 11:44:14,531 - INFO - PNG gespeichert: D:\Teko\Webscraping_Séverin\data\WordCount.png
+2025-09-20 11:44:14,533 - INFO - TXT gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.txt
+2025-09-20 11:44:14,534 - INFO - JSON gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.json
+2025-09-20 11:44:14,534 - INFO - CSV gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.csv
+2025-09-20 11:44:14,534 - INFO - XML gespeichert: D:\Teko\Webscraping_Séverin\data\headlines.xml
+2025-09-20 11:44:14,534 - INFO - === Script erfolgreich beendet ===

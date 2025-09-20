@@ -8,17 +8,21 @@ Autor: Séverin Gschwind
 Datum: 22.09.2025
 """
 
-import json, csv, logging, sys
-import xml.etree.ElementTree as ET      # Standardlib-Imports: Datenformate, Logging, Systemstreams
+# Standardbibliothek: Datenformate, Pfade, Zeit, Regex, Logging
+import csv
+import json
+import logging
+import sys
+import re
+import random
+from pathlib import Path
+from datetime import datetime
+import xml.etree.ElementTree as ET  # XML-Baum (Standardlib)
 
+# Drittanbieter,HTTP, HTML-Parsing, Visualisierung
 import requests
-from bs4 import BeautifulSoup           # Externe Libs für HTTP und HTML-Parsing
-
-from pathlib import Path                               
-from datetime import datetime           # Pfade/ Zeit für portable Speicherung & Zeitstempel
-
-import re, random                       # Random für Textfilter und (falls gewünscht) Shuffle
-import matplotlib.pyplot as plt         # Visualisierung 
+from bs4 import BeautifulSoup       # HTML-Parser
+import matplotlib.pyplot as plt     # Diagramme
 
 
 # Ordnerstruktur 
